@@ -23,6 +23,7 @@
 - https://tools.geekflare.com/tools/
 - https://securityheaders.com/
 - https://outils.apocalx.com/
+- https://validator.w3.org/
 - https://hackertarget.com/
 - http://www.robothumb.com/
 - http://web-sniffer.net/
