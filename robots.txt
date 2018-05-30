@@ -1,4 +1,4 @@
-Sitemap: http://home.scarlet.be/multi/sitemap.xml
+Sitemap: http://lamultiprogrammation.ze.cx/sitemap.xml
 
 User-agent: *
 Disallow: /favicon/
