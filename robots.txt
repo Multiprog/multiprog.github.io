@@ -1,0 +1,5 @@
+Sitemap: http://home.scarlet.be/multi/sitemap.xml
+
+User-agent: *
+Disallow: /favicon/
+Disallow: /img/
