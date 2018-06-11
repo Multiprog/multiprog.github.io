@@ -3,7 +3,6 @@ pages:
   script:
   - mkdir .public
   - cp -r * .public
-  - rm -r -f README.md
   - mv .public public
   # generator page gz
   - find public -type f -iregex '.*\.\(htm\|html\|txt\|text\|js\|css\|xml\)$' -execdir gzip -f --keep {} \;
