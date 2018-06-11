@@ -1,0 +1,15 @@
+/* TEAM */
+WebMaster : Cédric DEGOLS
+Site : http://cdegols.infos.st/
+Facebook, Google+ & Twitter : @cdegols || #cdegols
+From : Belgium
+
+/* THANKS */
+Azote.org : https://www.azote.org/
+
+/* SITE */
+Last update : 2018/06/11
+Language : French
+Doctype : HTML4
+Components : Gitlab, Github
+Software : Notepad++
