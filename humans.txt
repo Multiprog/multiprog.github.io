@@ -1,11 +1,14 @@
 /* TEAM */
 WebMaster : Cédric DEGOLS
 Site : http://cdegols.infos.st/
-Facebook, Google+ & Twitter : @cdegols || #cdegols
+Page Facebook : https://FaceBook.com/cdegols/
+Page Google+ : https://plus.google.com/109011089229330085067/
+Twitter : https://Twitter.com/cdegols/
 From : Belgium
 
 /* THANKS */
 Azote.org : https://www.azote.org/
+AscreeN : http://ascreen.apocalx.com/
 
 /* SITE */
 Last update : 2018/06/11
