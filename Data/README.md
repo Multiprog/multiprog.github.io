@@ -29,8 +29,11 @@
 - https://www.webmarketing-com.com/
 - https://www.webrankinfo.net/
 
+- - -
+
 ## Script OLD ##
-function favoris()
-{ if ( navigator.appName != 'Microsoft Internet Explorer' )
-  { window.sidebar.addPanel("c.la","http://www.c.la",""); }
-  else { window.external.AddFavorite("http://www.c.la","c.la"); } }
+
+    function favoris()
+    { if ( navigator.appName != 'Microsoft Internet Explorer' )
+      { window.sidebar.addPanel("c.la","http://www.c.la",""); }
+      else { window.external.AddFavorite("http://www.c.la","c.la"); } }
