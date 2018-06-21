@@ -32,7 +32,6 @@
 - - -
 
 ## Script OLD ##
-
     function favoris()
     { if ( navigator.appName != 'Microsoft Internet Explorer' )
       { window.sidebar.addPanel("c.la","http://www.c.la",""); }
