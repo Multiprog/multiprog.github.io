@@ -29,8 +29,6 @@
 - https://www.webmarketing-com.com/
 - https://www.webrankinfo.net/
 
-- - -
-
 ## Script OLD ##
     function favoris()
     { if ( navigator.appName != 'Microsoft Internet Explorer' )
