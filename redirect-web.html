@@ -28,12 +28,13 @@ a:link {color:Blue}
 <SCRIPT type="text/javascript"> <!--
 // if(top != self) top.location = self.location;
 
+function alertFunc() { alert("Hello in frame!"); }
+
 if(top != self)
-    alert("Hello in frame!");
+    alertFunc();
 else
     alert("Hello world!");
 
-function alertFunc() { alert("Hello!"); }
 
 function redirect()
 { if((window.parent.length != 0) || (parent.frames.length > 0) || (window != top)) 
