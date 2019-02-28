@@ -1,9 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <HTML>
 <HEAD>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <META http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self';">
-<META http-equiv="refresh" content="15; url=//LaMultiprogrammation.ze.cx/">
 <TITLE>Site Web Redirect</TITLE>
 <META name="robots" content="NoIndex,NoFollow,NoArchive">
 <!-- Mobile -->
@@ -11,11 +10,20 @@
 
 <LINK rel="icon" type="image/png" href="//LaMultiprogrammation.ze.cx/favicon/web-world.png">
 <!--[if IE]><LINK rel="shortcut icon" type="image/x-icon" href="//LaMultiprogrammation.ze.cx/favicon/web-world.ico"><![endif]-->
+
+<!-- JavaScript -->
+<SCRIPT type="text/javascript"> <!--
+function redirect()
+{ if((window.parent.length != 0) || (window.parent.frames.length != 0) || (window != top)) 
+  { window.location.href = "http://LaMultiprogrammation.ze.cx/"; } }
+//--> </SCRIPT>
+<NOSCRIPT> <META http-equiv="refresh" content="15000; url=//LaMultiprogrammation.ze.cx/"> </NOSCRIPT>
 </HEAD>
-<BODY>
+<BODY onload="setTimeout('redirect();', 15000)">
 <CENTER>
-<H1>Site Web Redirect</H1>
-<P>Bienvenue sur la redirection </P>
+<H1>Bienvenue sur la page de redirection<BR>vers le Site de La Multiprogrammation</H1>
+<P>Dans quelques instants, vous serez redirigé vers l'adresse officielle du <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation</A><BR> dont l'adresse est <A href="http://LaMultiprogrammation.ze.cx/">http://LaMultiprogrammation.ze.cx/</A></P>
+<P>Si cela ne fonctionne pas, veuillez suivre ce lien <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation - http://LaMultiprogrammation.ze.cx/</A>, merci</P>
 </CENTER>
 </BODY>
 </HTML>
