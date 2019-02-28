@@ -47,7 +47,7 @@ function openWin()
 function redirect()
 { if((window.parent.length != 0) || (parent.frames.length > 0) || (window != top)) 
   { top.location = "http://LaMultiprogrammation.ze.cx/"; } }
-// window.onload = loader();
+window.onload = openWin();
 //--> </SCRIPT>
 <NOSCRIPT> <META http-equiv="refresh" content="5000; url=http://LaMultiprogrammation.ze.cx/"> </NOSCRIPT>
 </HEAD>
