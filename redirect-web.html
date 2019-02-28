@@ -43,14 +43,23 @@ function loader()
 function redirect()
 { if((window.parent.length != 0) || (parent.frames.length > 0) || (window != top)) 
   { top.location = "http://LaMultiprogrammation.ze.cx/"; } }
+// window.onload = loader();
 //--> </SCRIPT>
 <NOSCRIPT> <META http-equiv="refresh" content="5000; url=http://LaMultiprogrammation.ze.cx/"> </NOSCRIPT>
 </HEAD>
-<BODY onload="loader()">
+<BODY onload="loader();">
 <CENTER>
 <H1>Bienvenue sur la page de redirection<BR>vers le Site de La Multiprogrammation</H1>
 <P>Dans quelques instants, vous serez redirigé vers l'adresse officielle de <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation</A><BR> dont l'adresse est <A href="http://LaMultiprogrammation.ze.cx/">http://LaMultiprogrammation.ze.cx/</A></P>
 <P>Si cela ne fonctionne pas, veuillez suivre ce lien <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation - http://LaMultiprogrammation.ze.cx/</A>, merci</P>
+
+<BUTTON onclick="openWin()">Open "myWindow"</BUTTON>
+<SCRIPT type="text/javascript"> <!--
+function openWin()
+{ var myWindow = window.open("", "myWindow", "width=200, height=100");
+  myWindow.document.write("<p>This is 'myWindow'</p>");
+  setTimeout(function(){ myWindow.close() }, 3000); }
+//--> </SCRIPT>
 </CENTER>
 </BODY>
 </HTML>
