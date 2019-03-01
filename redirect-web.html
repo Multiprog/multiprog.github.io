@@ -30,8 +30,8 @@ a:link {color:Blue}
 function AlertOnLoad()
 { var statut = "window";
   if(top != self) statut = "frame";
-  var r = alert("You are in " + statut);
-  if(r) top.location = "http://LaMultiprogrammation.ze.cx/"; }
+  var chk = confirm("You are in " + statut);
+  if(chk) top.location = "http://LaMultiprogrammation.ze.cx/"; }
 </SCRIPT>
 <NOSCRIPT> <META http-equiv="refresh" content="5000; url=http://LaMultiprogrammation.ze.cx/"> </NOSCRIPT>
 </HEAD>
