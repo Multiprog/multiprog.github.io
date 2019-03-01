@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- <META http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self';"> -->
+<META http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self';">
 <TITLE>Site Web Redirect</TITLE>
 <META name="keywords" content="Multiprogrammation, MultiProgram, Multi, Programmation, Programme, Program, BELGIUM, BELGIQUE, BE, language, COBOL, C, C++, JAVA, PASCAL, BASIC, FORTRAN, ASM, RPG, Informatique, Ordinateur, Serveur, Server, SRV, PC, P.C.">
 <META name="description" content="La Multiprogrammation - http://LaMultiprogrammation.ze.cx/">
@@ -29,21 +29,19 @@ a:link {color:Blue}
 function AntiFrame()
 { if(top != self)
   { var chk = confirm("Attention !!!\nVous n'êtes pas sur une version officielle et sécurisée du site de\nLa Multiprogrammation (http://LaMultiprogrammation.ze.cx/).\nVoulez-vous être rediriger vers notre site officiel ?");
-    if(chk) top.location = "http://LaMultiprogrammation.ze.cx/"; }
-  else alert("Coucou, c'est AntiFrame()"); }
+    if(chk) top.location = "http://LaMultiprogrammation.ze.cx/"; } }
 
 function Redirect()
 { if(top != self)
   { alert("Vous allez être rediriger");
-    top.location = "http://LaMultiprogrammation.ze.cx/"; }
-  else alert("Coucou, C'est Redirect()"); }
+    top.location = "http://LaMultiprogrammation.ze.cx/"; } }
 //--> </SCRIPT>
 <NOSCRIPT> <META http-equiv="refresh" content="5000; url=http://LaMultiprogrammation.ze.cx/"> </NOSCRIPT>
 </HEAD>
-<BODY onload="setTimeout('Redirect();', 5000);">
+<BODY onload="setTimeout('AntiFrame();', 5000);">
 <CENTER>
 <H1>Bienvenue sur la page de redirection<BR>vers le Site de La Multiprogrammation</H1>
-<P>Dans quelques instants, vous serez redirigé vers le site officielle de <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation</A><BR> dont l'adresse est <A href="http://LaMultiprogrammation.ze.cx/">http://LaMultiprogrammation.ze.cx/</A></P>
+<P>Dans quelques instants, vous serez redirigé vers le site officielle de <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation</A><BR>dont l'adresse est <A href="http://LaMultiprogrammation.ze.cx/">http://LaMultiprogrammation.ze.cx/</A></P>
 <P>Si cela ne fonctionne pas, veuillez suivre ce lien <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation - http://LaMultiprogrammation.ze.cx/</A>, merci</P>
 
 <BUTTON onclick="Redirect();">Redirect()</BUTTON>
