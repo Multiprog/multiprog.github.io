@@ -31,11 +31,13 @@ function AntiFrame()
 { if(top != self)
   { var chk = confirm("Attention !!!\nVous n'êtes pas sur une version officiel et sécurisé du site de La Multiprogrammation (http://LaMultiprogrammation.ze.cx/).\nVoulez-vous être rediriger vers notre site officiel ?");
     if(chk) top.location = "http://LaMultiprogrammation.ze.cx/"; }
+  else alert("Coucou, c'est AntiFrame()"); }
 
 function Redirect()
 { if(top != self)
   { alert("Vous allez être rediriger");
     top.location = "http://LaMultiprogrammation.ze.cx/"; }
+  else alert("Coucou, C'est Redirect()"); }
 
 function AlertOnLoad()
 { var statut = "window";
