@@ -25,11 +25,11 @@ a:active {color:Red}
 a:link {color:Blue}
 </STYLE>
 
-<SCRIPT type="text/javascript">
+<SCRIPT type="text/javascript"> <!--
 // setTimeout('AlertOnLoad();', 5000);
 function AntiFrame()
 { if(top != self)
-  { var chk = confirm("Attention !!!\nVous n'êtes pas sur une version officiel et sécurisé du site de La Multiprogrammation (http://LaMultiprogrammation.ze.cx/).\nVoulez-vous être rediriger vers notre site officiel ?");
+  { var chk = confirm("Attention !!!\nVous n'êtes pas sur une version officiel et sécurisé du site de\nLa Multiprogrammation (http://LaMultiprogrammation.ze.cx/).\nVoulez-vous être rediriger vers notre site officiel ?");
     if(chk) top.location = "http://LaMultiprogrammation.ze.cx/"; }
   else alert("Coucou, c'est AntiFrame()"); }
 
@@ -38,16 +38,10 @@ function Redirect()
   { alert("Vous allez être rediriger");
     top.location = "http://LaMultiprogrammation.ze.cx/"; }
   else alert("Coucou, C'est Redirect()"); }
-
-function AlertOnLoad()
-{ var statut = "window";
-  if(top != self) statut = "frame";
-  var chk = confirm("You are in " + statut);
-  if(chk) top.location = "http://LaMultiprogrammation.ze.cx/"; }
-</SCRIPT>
+//--> </SCRIPT>
 <NOSCRIPT> <META http-equiv="refresh" content="5000; url=http://LaMultiprogrammation.ze.cx/"> </NOSCRIPT>
 </HEAD>
-<BODY onload="setTimeout('AlertOnLoad();', 5000);">
+<BODY onload="setTimeout('Redirect();', 5000);">
 <CENTER>
 <H1>Bienvenue sur la page de redirection<BR>vers le Site de La Multiprogrammation</H1>
 <P>Dans quelques instants, vous serez redirigé vers l'adresse officielle de <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation</A><BR> dont l'adresse est <A href="http://LaMultiprogrammation.ze.cx/">http://LaMultiprogrammation.ze.cx/</A></P>
@@ -55,7 +49,6 @@ function AlertOnLoad()
 
 <BUTTON onclick="Redirect();">Redirect()</BUTTON>
 <BUTTON onclick="AntiFrame();">AntiFrame()</BUTTON>
-<BUTTON onclick="AlertOnLoad();">Alert On Load</BUTTON>
 </CENTER>
 </BODY>
 </HTML>
