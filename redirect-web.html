@@ -29,12 +29,12 @@ a:link {color:Blue}
 function coucou()
 { alert("Coucou"); }
 
-/* function Info()
-{ var fr = navigator.language.indexOf("fr");
-  var en = navigator.language.indexOf("en");
-  var msg = "Alert!!! Error";
-  alert("Language : " + navigator.language + "\nfr = " + fr + " - en = " + en + "\nMsg = " + msg); }
-*/
+function Info()
+{ var msg = "Alert!!! Error";
+  var lang = navigator.language || navigator.browserLanguage || navigator.userLanguage;
+  if(lang.indexOf("fr") != -1) msg = "FR";
+  alert("Language : " + navigator.languages + "\nlang = " + lang + "\nMsg = " + msg); }
+
 function Redirect()
 { if(top != self) { alert("Hello in frame!"); setTimeout(top.location = "http://LaMultiprogrammation.ze.cx/";, 5000); } }
 //--> </SCRIPT>
