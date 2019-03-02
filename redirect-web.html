@@ -26,16 +26,30 @@ a:link {color:Blue}
 </STYLE>
 
 <SCRIPT type="text/javascript"> <!--
+function Coucou()
+{ alert("Coucou"); }
+
+function Info()
+{ alert("navigator.language");
+  var fr = navigator.language.indexOf("fr");
+  var en = navigator.language.indexOf("en");
+  var msg = "Alert!!! Error";
+  alert("fr = " + fr + " - en = " + en "\nMsg = " + msg); }
+
 function Redirect()
 { if(top != self) { alert("Hello in frame!"); setTimeout(top.location = "http://LaMultiprogrammation.ze.cx/";, 5000); } }
 //--> </SCRIPT>
 <NOSCRIPT> <META http-equiv="refresh" content="5000; url=http://LaMultiprogrammation.ze.cx/"> </NOSCRIPT>
 </HEAD>
-<BODY onload="Redirect();">
+<BODY>
+<!-- <BODY onload="Redirect();"> -->
 <CENTER>
 <H1>Bienvenue sur la page de redirection<BR>vers le Site de La Multiprogrammation</H1>
 <P>Dans quelques instants, vous serez redirigé vers le site officielle de <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation</A><BR>dont l'adresse est <A href="http://LaMultiprogrammation.ze.cx/">http://LaMultiprogrammation.ze.cx/</A></P>
 <P>Si cela ne fonctionne pas, veuillez suivre ce lien <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation - http://LaMultiprogrammation.ze.cx/</A>, merci</P>
+
+<BUTTON onclick="Coucou();">Open Coucou()</BUTTON>
+<BUTTON onclick="Info();">Open Info()</BUTTON>
 </CENTER>
 </BODY>
 </HTML>
