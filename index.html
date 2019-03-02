@@ -39,9 +39,11 @@ a:link {color:Blue}
 
 <SCRIPT type="text/javascript"> <!--
 alert(navigator.language);
+var fr = navigator.language.indexOf("fr"), en = navigator.language.indexOf("en");
+var msg = "Alert!!! Error";
+alert("fr = " + fr + " - en = " + en "\nMsg = " + msg);
 if(top != self)
-{ alert(navigator.language);
-  var fr = navigator.language.indexOf("fr"), en = navigator.language.indexOf("en");
+{ var fr = navigator.language.indexOf("fr"), en = navigator.language.indexOf("en");
   var msg = "Alert!!! Error";
   alert("fr = " + fr + " - en = " + en "\nMsg = " + msg);
   if(fr > en) msg = "Attention !!!\nVous n'êtes pas sur une version officielle et sécurisée du site de\nLa Multiprogrammation (http://LaMultiprogrammation.ze.cx/).\nVoulez-vous être rediriger vers notre site officiel ?";
