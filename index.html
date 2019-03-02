@@ -38,16 +38,17 @@ a:link {color:Blue}
 </STYLE>
 
 <SCRIPT type="text/javascript"> <!--
-alert(navigator.language);
-var fr = navigator.language.indexOf("fr"), en = navigator.language.indexOf("en");
-var msg = "Alert!!! Error";
-alert("fr = " + fr + " - en = " + en "\nMsg = " + msg);
 if(top != self)
 { var fr = navigator.language.indexOf("fr"), en = navigator.language.indexOf("en");
   var msg = "Alert!!! Error";
-  alert("fr = " + fr + " - en = " + en "\nMsg = " + msg);
   if(fr > en) msg = "Attention !!!\nVous n'êtes pas sur une version officielle et sécurisée du site de\nLa Multiprogrammation (http://LaMultiprogrammation.ze.cx/).\nVoulez-vous être rediriger vers notre site officiel ?";
   if(confirm(msg)) top.location = "http://LaMultiprogrammation.ze.cx/"; }
+
+function info()
+{ alert(navigator.language);
+  var fr = navigator.language.indexOf("fr"), en = navigator.language.indexOf("en");
+  var msg = "Alert!!! Error";
+  alert("fr = " + fr + " - en = " + en "\nMsg = " + msg); }
 
 function data()
 { var prefix = 'm&#97;&#105;lt&#111;:';
@@ -68,7 +69,8 @@ function data()
 <TR>
 <TD valign='middle' align='center' colspan="2">
 <IMG src="./imgs/Multiprogram.png" alt="La Multiprogrammation Logo">
-<HR id="line01" size="2" color="Gray" align="center" noshade width="75%"></TD></TR>
+<HR id="line01" size="2" color="Gray" align="center" noshade width="75%">
+<BUTTON onclick="Info()">Open "myWindow"</BUTTON></TD></TR>
 <TR>
 <TD align='right'>Nom statutaire :</TD>
 <TD align='left' nowrap>La Multiprogrammation SPRL</TD></TR>
