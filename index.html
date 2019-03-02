@@ -38,9 +38,14 @@ a:link {color:Blue}
 </STYLE>
 
 <SCRIPT type="text/javascript"> <!--
+alert(navigator.language);
 if(top != self)
-{ var chk = confirm("Attention !!!\nVous n'êtes pas sur une version officielle et sécurisée du site de\nLa Multiprogrammation (http://LaMultiprogrammation.ze.cx/).\nVoulez-vous être rediriger vers notre site officiel ?");
-  if(chk) top.location = "http://LaMultiprogrammation.ze.cx/"; }
+{ alert(navigator.language);
+  var fr = navigator.language.indexOf("fr"), en = navigator.language.indexOf("en");
+  var msg = "Alert!!! Error";
+  alert("fr = " + fr + " - en = " + en "\nMsg = " + msg);
+  if(fr > en) msg = "Attention !!!\nVous n'êtes pas sur une version officielle et sécurisée du site de\nLa Multiprogrammation (http://LaMultiprogrammation.ze.cx/).\nVoulez-vous être rediriger vers notre site officiel ?";
+  if(confirm(msg)) top.location = "http://LaMultiprogrammation.ze.cx/"; }
 
 function data()
 { var prefix = 'm&#97;&#105;lt&#111;:';
