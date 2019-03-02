@@ -2,8 +2,7 @@
 <HTML>
 <HEAD>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<META http-equiv="Content-Security-Policy" content="default-src 'none' lamultiprogrammation.ze.cx; base-uri 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self';">
-<!-- frame-ancestors 'none'; -->
+<META http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'self' lamultiprogrammation.ze.cx; style-src 'self' 'unsafe-inline'; img-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self';">
 <TITLE>Site Web Redirect</TITLE>
 <META name="keywords" content="Multiprogrammation, MultiProgram, Multi, Programmation, Programme, Program, BELGIUM, BELGIQUE, BE, language, COBOL, C, C++, JAVA, PASCAL, BASIC, FORTRAN, ASM, RPG, Informatique, Ordinateur, Serveur, Server, SRV, PC, P.C.">
 <META name="description" content="La Multiprogrammation - http://LaMultiprogrammation.ze.cx/">
@@ -28,11 +27,11 @@ a:link {color:Blue}
 
 <SCRIPT type="text/javascript"> <!--
 function Redirect()
-{ if(top != self) top.location = "http://LaMultiprogrammation.ze.cx/"; }
+{ if(top != self) { alert("Hello in frame!"); setTimeout('top.location = "http://LaMultiprogrammation.ze.cx/";', 5000); } }
 //--> </SCRIPT>
 <NOSCRIPT> <META http-equiv="refresh" content="5000; url=http://LaMultiprogrammation.ze.cx/"> </NOSCRIPT>
 </HEAD>
-<BODY onload="setTimeout('Redirect();', 5000);">
+<BODY onload="Redirect();">
 <CENTER>
 <H1>Bienvenue sur la page de redirection<BR>vers le Site de La Multiprogrammation</H1>
 <P>Dans quelques instants, vous serez redirigé vers le site officielle de <A href="http://LaMultiprogrammation.ze.cx/">La Multiprogrammation</A><BR>dont l'adresse est <A href="http://LaMultiprogrammation.ze.cx/">http://LaMultiprogrammation.ze.cx/</A></P>
