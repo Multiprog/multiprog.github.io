@@ -1,5 +1,6 @@
 Sitemap: http://lamultiprogrammation.ze.cx/sitemap.xml
 
 User-agent: *
+Disallow: /Data/
 Disallow: /favicon/
 Disallow: /imgs/
