@@ -11,7 +11,7 @@ Azote.org : https://www.azote.org/
 AscreeN : http://ascreen.apocalx.com/
 
 /* SITE */
-Last update : 2018/06/13
+Last update : 2019/03/05
 Language : French
 Doctype : HTML4.01
 Components : Gitlab, Github
